@@ -7,8 +7,8 @@
         <tr>
             @foreach ($collection as $item)
                 <tr>
-                    <td>{{$item->name}}</td>
-                    <td>{{$item->lastName}}</td>
+                    <td>{{data_get($item,'name')}}</td>
+                    <td>{{data_get($item,'lastName')}}</td>
                 </tr>
             @endforeach
         </tr>
